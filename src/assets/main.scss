@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("font/font.scss");
+@import url('animation.scss');
+
+.reaver {
+  font-family: Reaver;
+}
+
+* {
+    font-family: Radiance;
+}

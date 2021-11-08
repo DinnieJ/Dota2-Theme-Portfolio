@@ -1,0 +1,35 @@
+.text-shadow {
+  text-shadow: 2px 2px #000;
+}
+
+.skill-title {
+  visibility: hidden;
+  left: -3.75rem;
+  top: calc(-5rem - 24px);
+}
+
+.skill {
+  -webkit-box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.8);
+
+  &:hover {
+    transform: scale(1.2);
+
+    & + .skill-title {
+      visibility: visible;
+    }
+  }
+}
+
+.skill-title::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  border-top: 20px solid rgb(107, 114, 128);
+  left: calc(50% - 20px);
+}
